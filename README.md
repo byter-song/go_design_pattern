@@ -76,6 +76,34 @@ Go 语言社区演化出的独特模式，非传统 GoF 设计模式。
 
 ---
 
+## ✅ GoF 23 模式完成度总表
+
+| 类型 | 模式 | 目录 | 关键实现文件 |
+|------|------|------|--------------|
+| 创建型 | 单例模式 | [`creational/singleton/`](./creational/singleton/) | [`singleton.go`](./creational/singleton/singleton.go) |
+| 创建型 | 工厂方法 | [`creational/factory/`](./creational/factory/) | [`factory.go`](./creational/factory/factory.go) |
+| 创建型 | 建造者模式 | [`creational/builder/`](./creational/builder/) | [`builder.go`](./creational/builder/builder.go) |
+| 创建型 | 抽象工厂模式 | [`creational/abstract_factory/`](./creational/abstract_factory/) | [`abstract_factory.go`](./creational/abstract_factory/abstract_factory.go) |
+| 创建型 | 原型模式 | [`creational/prototype/`](./creational/prototype/) | [`prototype.go`](./creational/prototype/prototype.go) |
+| 结构型 | 适配器模式 | [`structural/adapter/`](./structural/adapter/) | [`adapter.go`](./structural/adapter/adapter.go) |
+| 结构型 | 装饰器模式 | [`structural/decorator/`](./structural/decorator/) | [`decorator.go`](./structural/decorator/decorator.go) |
+| 结构型 | 代理模式 | [`structural/proxy/`](./structural/proxy/) | [`proxy.go`](./structural/proxy/proxy.go) |
+| 结构型 | 组合模式 | [`structural/composite/`](./structural/composite/) | [`composite.go`](./structural/composite/composite.go) |
+| 结构型 | 外观模式 | [`structural/facade/`](./structural/facade/) | [`facade.go`](./structural/facade/facade.go) |
+| 结构型 | 桥接模式 | [`structural/bridge/`](./structural/bridge/) | [`bridge.go`](./structural/bridge/bridge.go) |
+| 结构型 | 享元模式 | [`structural/flyweight/`](./structural/flyweight/) | [`flyweight.go`](./structural/flyweight/flyweight.go) |
+| 行为型 | 策略模式 | [`behavioral/strategy/`](./behavioral/strategy/) | [`strategy.go`](./behavioral/strategy/strategy.go) |
+| 行为型 | 观察者模式 | [`behavioral/observer/`](./behavioral/observer/) | [`observer.go`](./behavioral/observer/observer.go) |
+| 行为型 | 责任链模式 | [`behavioral/chain_of_responsibility/`](./behavioral/chain_of_responsibility/) | [`chain_of_responsibility.go`](./behavioral/chain_of_responsibility/chain_of_responsibility.go) |
+| 行为型 | 状态模式 | [`behavioral/state/`](./behavioral/state/) | [`state.go`](./behavioral/state/state.go) |
+| 行为型 | 模板方法 | [`behavioral/template_method/`](./behavioral/template_method/) | [`template_method.go`](./behavioral/template_method/template_method.go) |
+| 行为型 | 命令模式 | [`behavioral/command/`](./behavioral/command/) | [`command.go`](./behavioral/command/command.go) |
+| 行为型 | 迭代器模式 | [`behavioral/iterator/`](./behavioral/iterator/) | [`iterator.go`](./behavioral/iterator/iterator.go) |
+| 行为型 | 备忘录模式 | [`behavioral/memento/`](./behavioral/memento/) | [`memento.go`](./behavioral/memento/memento.go) |
+| 行为型 | 中介者模式 | [`behavioral/mediator/`](./behavioral/mediator/) | [`mediator.go`](./behavioral/mediator/mediator.go) |
+| 行为型 | 访问者模式 | [`behavioral/visitor/`](./behavioral/visitor/) | [`visitor.go`](./behavioral/visitor/visitor.go) |
+| 行为型 | 解释器模式 | [`behavioral/interpreter/`](./behavioral/interpreter/) | [`interpreter.go`](./behavioral/interpreter/interpreter.go) |
+
 ## 📁 项目目录结构
 
 ```

@@ -27,19 +27,19 @@ import (
 // 包含多个配置项，其中一些是必填的，一些是可选的。
 //
 // 设计决策：
-//   1. 字段导出（大写），但推荐通过建造者创建
-//   2. 包含合理的默认值
-//   3. 必填字段使用指针或特殊值表示未设置
+//  1. 字段导出（大写），但推荐通过建造者创建
+//  2. 包含合理的默认值
+//  3. 必填字段使用指针或特殊值表示未设置
 type Server struct {
 	// 必填字段
 	Host string
 	Port int
 
 	// 可选字段（有默认值）
-	ReadTimeout     time.Duration
-	WriteTimeout    time.Duration
-	MaxHeaderBytes  int
-	MaxConnections  int
+	ReadTimeout    time.Duration
+	WriteTimeout   time.Duration
+	MaxHeaderBytes int
+	MaxConnections int
 
 	// 可选字段（布尔标志）
 	TLS      bool
@@ -204,10 +204,10 @@ func (b *ServerBuilder) Build() (*Server, error) {
 // Option 是函数式选项类型，这是 Go 社区广泛采用的模式。
 //
 // 相比传统建造者，函数式选项模式的优势：
-//   1. 更简洁的 API
-//   2. 易于扩展，新增选项不需要修改结构体
-//   3. 可以组合和复用选项
-//   4. 更符合 Go 的函数式编程风格
+//  1. 更简洁的 API
+//  2. 易于扩展，新增选项不需要修改结构体
+//  3. 可以组合和复用选项
+//  4. 更符合 Go 的函数式编程风格
 //
 // 这是 Go 标准库（如 grpc、uber-go/zap）采用的方式。
 type Option func(*Server)
