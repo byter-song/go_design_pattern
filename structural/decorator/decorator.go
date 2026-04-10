@@ -29,9 +29,9 @@ import (
 // Handler 是处理函数的核心接口，类似于 http.HandlerFunc。
 //
 // 设计决策：
-//   1. 使用 context.Context 传递上下文（Go 惯用法）
-//   2. 返回 error 便于错误处理
-//   3. 使用 Request/Response 结构体封装数据
+//  1. 使用 context.Context 传递上下文（Go 惯用法）
+//  2. 返回 error 便于错误处理
+//  3. 使用 Request/Response 结构体封装数据
 type Handler func(ctx context.Context, req *Request) (*Response, error)
 
 // Request 表示请求数据

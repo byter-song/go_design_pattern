@@ -143,8 +143,8 @@ func (u *User) IsAdmin() bool {
 
 // ProtectedImage 是受保护的图片代理
 type ProtectedImage struct {
-	image    Image
-	user     *User
+	image     Image
+	user      *User
 	adminOnly bool
 }
 
@@ -182,11 +182,11 @@ func (p *ProtectedImage) GetSize() int {
 
 // CacheProxy 是缓存代理
 type CacheProxy struct {
-	image      Image
-	cache      map[string]interface{}
-	cacheTime  map[string]time.Time
-	ttl        time.Duration
-	mu         sync.RWMutex
+	image     Image
+	cache     map[string]interface{}
+	cacheTime map[string]time.Time
+	ttl       time.Duration
+	mu        sync.RWMutex
 }
 
 // NewCacheProxy 创建缓存代理
@@ -262,10 +262,10 @@ func (c *CacheProxy) ClearCache() {
 
 // SmartReferenceProxy 是智能引用代理
 type SmartReferenceProxy struct {
-	image       Image
-	refCount    int
-	lastAccess  time.Time
-	mu          sync.Mutex
+	image      Image
+	refCount   int
+	lastAccess time.Time
+	mu         sync.Mutex
 }
 
 // NewSmartReferenceProxy 创建智能引用代理

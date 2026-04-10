@@ -91,6 +91,9 @@ func TestDirectoryWalk(t *testing.T) {
 	})
 
 	expected := []string{"root", "src", "main.go", "util.go", "README.md"}
+
+	t.Logf("expected visited %v, got %v", expected, visited)
+
 	if strings.Join(visited, ",") != strings.Join(expected, ",") {
 		t.Fatalf("expected %v, got %v", expected, visited)
 	}

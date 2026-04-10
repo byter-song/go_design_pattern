@@ -68,9 +68,9 @@ func (l *LegacyPaymentSystem) DoRefund(transactionID int64) error {
 // LegacyPaymentAdapter 将 LegacyPaymentSystem 适配到 PaymentProcessor 接口。
 //
 // 设计决策：
-//   1. 使用组合而非继承（Go 没有继承）
-//   2. 嵌入被适配的对象
-//   3. 在适配方法中处理参数转换
+//  1. 使用组合而非继承（Go 没有继承）
+//  2. 嵌入被适配的对象
+//  3. 在适配方法中处理参数转换
 type LegacyPaymentAdapter struct {
 	legacy *LegacyPaymentSystem
 }
